@@ -23,5 +23,11 @@ student3 = Student.new({'first_name' => 'Cedric',
 'age' => '15'})
 student3.save
 
+student4 = Student.new({'first_name' => 'Luna',
+'second_name' => 'Lovegood',
+'house' => 'Ravenclaw',
+'age' => '12'})
+student4.save
+
 binding.pry
 nil
