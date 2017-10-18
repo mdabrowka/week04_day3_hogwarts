@@ -12,6 +12,16 @@ get '/students' do
   erb(:index)
 end
 
+get '/students/new' do
+  erb(:new)
+end
+
+get '/student/:id' do
+  @student = Student.find(params[:id])
+  erb(:show)
+end
+
+
 # get '/name/:first/:last' do
 #   return "Welcome to Hogwarts, #{params[:first].capitalize} #{params[:last].capitalize}!"
 # # end
